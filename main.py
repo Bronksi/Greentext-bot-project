@@ -9,9 +9,9 @@ import random
 import praw
 import requests
 #reddit imige grabbing
-reddit = praw.Reddit(client_id="3BPKsmDeLHUwHbUYNIJmeA",
-                        client_secret="UYluUprtlM9fryKw1KMv7g6WoTwnPg",
-                        user_agent="scraperbot")
+reddit = praw.Reddit(client_id="",
+                        client_secret="",
+                        user_agent="")
 sub = reddit.subreddit("greentext")
 for post in sub.top(limit=1,time_filter="hour"):
     URL = (post.url)
